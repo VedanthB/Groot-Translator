@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groot Translate App</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        textarea {
+            width: 80%;
+            height: 10vh;
+            display: block;
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        #output {
+            border: 1px solid black;
+            height: 10vh;
+            width: 80%;
+            margin: 1rem;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navigation container">
+        <div class="nav-brand">Groot Translator</div>
+        
+    </nav>
+
+    <header class="hero">
+        <img class="hero-img" src="https://media.tenor.com/images/3492645e5e2f68119775ed89a20c1104/tenor.gif" />
+        <h1 class="hero-heading">groot<span class="heading-inverted"> Translator</span></h1>
+    </header>
+
+    <section class="section ow">
+        <div class="container-1">
+            <h2>talk groot</h2>
+            <textarea id="txt-input"
+            placeholder="put your sentence in English here and we will convert it to banana"></textarea>
+            <button class="btn btn-success" id="btn-translate">Translate </button>
+        </div>
+
+        <div style="font-size: larger;"> Output will come here 👇</div>
+
+        <div id="output"></div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-header">An app made for groot lovers
+        </div>
+        
+    </footer>
+
+    <script src="app.js" type="text/javascript"></script>
+
+
+</body>
+</html>
