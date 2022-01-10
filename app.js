@@ -7,17 +7,17 @@ var outputDiv = document.querySelector("#output");
 var serverURL = 'https://api.funtranslations.com/translate/groot.json'
 
 
-function getTranslationURL(input) {
+const getTranslationURL = input => {
     return serverURL + "?" + "text=" + input
 }
 
-function errorHandler(error) {
+const errorHandler error => {
     console.log("error occured", error);
     alert("something wrong with server! try again after some time")
 }
 
 
-function clickHandler() {
+const clickHandler = () => {
     var inputText = txtInput.value; // taking input
 
     // calling server for processing
